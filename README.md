@@ -14,6 +14,12 @@ Displays already running HDR are left alone.
 
 ## Why use it?
 
+**Mutter already supports native-gamut SDR (`sdr-native`), but GNOME's built-in
+display settings UI does not expose a dedicated switch for it in the targeted
+GNOME 50/51 setup.** This extension fills that UI gap with a convenient Quick
+Settings toggle. It uses the compositor's existing functionality; it does not
+patch Mutter or implement a new color-processing pipeline.
+
 If your display supports native-gamut SDR but GNOME Settings returns it to
 `default` after disabling HDR, this extension restores `sdr-native` without
 turning HDR back on. You can also switch all eligible outputs together from
