@@ -1,0 +1,14 @@
+{
+  "uuid": "force-sdr-native@oasis.github.io",
+  "name": "Force SDR Native",
+  "description": "Quick Settings control for SDR native color mode, with non-blocking automatic restoration, HDR protection, and temporary display configuration changes.",
+  "shell-version": [
+    "50",
+    "51"
+  ],
+  "url": "https://github.com/IoriAkatsuki/sdr-native",
+  "version": 3,
+  "session-modes": [
+    "user"
+  ]
+}
