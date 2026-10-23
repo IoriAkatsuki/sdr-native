@@ -36,7 +36,16 @@ GNOME 50/51 环境中，系统自带的显示设置 UI 没有提供对应的独�
 报告的 `supported-color-modes` 包含 `sdr-native`。版本声明不等于两个版本均已
 完成实屏验证；安装插件不会让不兼容的屏幕获得原生 SDR 能力。
 
-安装需 Git 和 `gnome-extensions`。按[英文首页的源码安装命令](README.md#install-from-source)
+推荐从 [GitHub Releases](https://github.com/IoriAkatsuki/sdr-native/releases/latest)
+下载 `force-sdr-native@oasis.github.io.shell-extension.zip` 和 `SHA256SUMS`，
+放在同一目录后执行：
+
+```bash
+sha256sum -c SHA256SUMS
+gnome-extensions install --force ./force-sdr-native@oasis.github.io.shell-extension.zip
+```
+
+也可从源码安装，需 Git 和 `gnome-extensions`。按[英文首页的源码安装命令](README.md#install-from-source)
 克隆、打包并安装。更新前备份现有插件，安装后注销并重新登录，再执行：
 
 ```bash

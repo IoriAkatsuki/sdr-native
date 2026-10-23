@@ -51,6 +51,20 @@ The metadata declares versions 50/51; that is not physical-display validation
 on both releases. Unsupported displays do not gain native SDR support by
 installing this extension. Current tile status messages are in Chinese.
 
+## Install a release package
+
+Download `force-sdr-native@oasis.github.io.shell-extension.zip` and `SHA256SUMS`
+from [GitHub Releases](https://github.com/IoriAkatsuki/sdr-native/releases/latest)
+into the same directory, then run there:
+
+```bash
+sha256sum -c SHA256SUMS
+gnome-extensions install --force ./force-sdr-native@oasis.github.io.shell-extension.zip
+```
+
+Back up any existing installation first. Log out and back in, then run
+`gnome-extensions enable force-sdr-native@oasis.github.io`.
+
 ## Install from source
 
 ```bash
